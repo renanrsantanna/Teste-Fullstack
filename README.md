@@ -64,10 +64,6 @@ PG_PORT=5432
 PG_USER=seu_usuario
 PG_PASSWORD=sua_senha
 PG_DATABASE=teste_fullstack
-
-# Server
-PORT=3333
-NODE_ENV=development
 ```
 
 **Notas importantes:**
@@ -98,7 +94,7 @@ Inicie o servidor em modo watch (recarrega automaticamente quando você altera o
 npm run dev
 ```
 
-O servidor será iniciado em `http://localhost:3333` (ou na porta configurada no `.env`)
+O servidor será iniciado em `http://localhost:3333`
 
 ### Modo Produção
 
@@ -143,33 +139,3 @@ O arquivo `knexfile.ts` contém a configuração de conexão com o PostgreSQL:
 ## 🔐 Validação de Dados
 
 O projeto utiliza **Zod** para validação de dados. Todos os dados recebidos da API são validados contra schemas definidos utilizando Zod antes de serem processados.
-
-## 📌 Notas Importantes
-
-1. **Variáveis de Ambiente**: Não commit o arquivo `.env` no Git. Use `.env.example` como referência
-2. **Migrações**: Sempre execute migrações antes de iniciar a aplicação
-3. **TypeScript**: O projeto utiliza TypeScript, certifique-se de compreender a tipagem
-4. **Port**: Verifique se a porta 3333 está disponível
-
-## 🤞 Contribuindo
-
-Para contribuir com este projeto:
-
-1. Crie uma branch para sua feature (`git checkout -b feature/MinhaFeature`)
-2. Commit suas mudanças (`git commit -m 'Add MinhaFeature'`)
-3. Push para a branch (`git push origin feature/MinhaFeature`)
-4. Abra um Pull Request
-
-## 📄 Licença
-
-Este projeto está licenciado sob a licença ISC.
-
-## 👤 Autor
-
-**Renan Rodrigues Sant'Anna**
-
-GitHub: [@Moionese](https://github.com/Moionese)
-
----
-
-**Óltima atualização**: Janeiro de 2026
