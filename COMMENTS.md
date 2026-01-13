@@ -74,14 +74,8 @@ PG_DATABASE=teste_fullstack
 ### Passo 4: Execute as migrações do banco de dados
 
 ```bash
-# Criar nóvos dados de migração
-npm run migrate:make -- nome_da_migracao
-
-# Executar todas as migrações pendéntes
+# Executar todas as migrações pendentes
 npm run migrate:latest
-
-# Reverter a última migração
-npm run migrate:rollback
 ```
 
 ## 🚀 Como Inicializar o Projeto
